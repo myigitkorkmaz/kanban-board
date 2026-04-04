@@ -12,7 +12,7 @@ export function Header({ onNewTask }: Props) {
         <div className="logo-mark">
           <img src="/logo.png" alt="Sportlingo" width={26} height={26} style={{ objectFit: 'contain' }} />
         </div>
-        <span className="logo-text">sportlingo</span>
+        <span className="logo-text">Sportlingo</span>
         <span className="logo-tag">board</span>
       </div>
 
@@ -55,10 +55,10 @@ export function Header({ onNewTask }: Props) {
         }
         .logo-text {
           font-family: var(--font-display);
-          font-size: 20px;
+          font-size: 17px;
           font-weight: 800;
           color: var(--text);
-          letter-spacing: -0.03em;
+          letter-spacing: -0.01em;
         }
         .logo-tag {
           font-family: var(--font-display);
