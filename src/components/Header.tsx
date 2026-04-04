@@ -59,6 +59,8 @@ export function Header({ onNewTask }: Props) {
           font-weight: 800;
           color: var(--text);
           letter-spacing: -0.01em;
+          line-height: 1.5;
+          padding-bottom: 2px;
         }
         .logo-tag {
           font-family: var(--font-display);

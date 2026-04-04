@@ -46,7 +46,16 @@ export function useBoard() {
       if (membersRes.error) throw membersRes.error;
       if (labelsRes.error) throw labelsRes.error;
 
-      setTasks(tasksRes.data || []);
+      let tasks = tasksRes.data || [];
+      if (tasks.length === 0) {
+        const { data: seeded } = await supabase.from('tasks').insert({
+          title: 'vedati ellemek',
+          status: 'todo',
+          priority: 'high',
+        }).select().single();
+        if (seeded) tasks = [seeded];
+      }
+      setTasks(tasks);
       setMembers(membersRes.data || []);
       setLabels(labelsRes.data || []);
     } catch (err: any) {
