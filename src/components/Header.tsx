@@ -12,8 +12,8 @@ export function Header({ onNewTask }: Props) {
         <div className="logo-mark">
           <Zap size={16} fill="currentColor" />
         </div>
-        <span className="logo-text">flow</span>
-        <span className="logo-tag">board</span>
+        <span className="logo-text">Vedata</span>
+        <span className="logo-tag">Gotten</span>
       </div>
 
       <div className="header-actions">
