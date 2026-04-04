@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plus, Zap } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 interface Props {
   onNewTask: () => void;
@@ -10,10 +10,10 @@ export function Header({ onNewTask }: Props) {
     <header className="header">
       <div className="header-logo">
         <div className="logo-mark">
-          <Zap size={16} fill="currentColor" />
+          <img src="/logo.png" alt="Sportlingo" width={26} height={26} style={{ objectFit: 'contain' }} />
         </div>
-        <span className="logo-text">Vedata</span>
-        <span className="logo-tag">Gotten</span>
+        <span className="logo-text">sportlingo</span>
+        <span className="logo-tag">board</span>
       </div>
 
       <div className="header-actions">
@@ -43,14 +43,15 @@ export function Header({ onNewTask }: Props) {
           gap: 8px;
         }
         .logo-mark {
-          width: 28px;
-          height: 28px;
-          background: var(--accent);
-          border-radius: 8px;
+          width: 34px;
+          height: 34px;
+          background: #fff;
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
+          overflow: hidden;
+          box-shadow: 0 0 16px rgba(192, 41, 43, 0.4);
         }
         .logo-text {
           font-family: var(--font-display);
@@ -63,13 +64,14 @@ export function Header({ onNewTask }: Props) {
           font-family: var(--font-display);
           font-size: 11px;
           font-weight: 600;
-          color: var(--text-3);
-          background: var(--bg-3);
-          border: 1px solid var(--border);
+          color: var(--accent-2);
+          background: var(--bg-4);
+          border: 1px solid var(--accent);
           padding: 2px 8px;
           border-radius: 20px;
           letter-spacing: 0.03em;
           text-transform: uppercase;
+          opacity: 0.85;
         }
         .new-task-btn {
           background: var(--accent);
