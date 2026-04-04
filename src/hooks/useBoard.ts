@@ -48,12 +48,11 @@ export function useBoard() {
 
       let tasks = tasksRes.data || [];
       if (tasks.length === 0) {
-        const { data: seeded } = await supabase.from('tasks').insert({
-          title: 'vedati ellemek',
-          status: 'todo',
-          priority: 'high',
-        }).select().single();
-        if (seeded) tasks = [seeded];
+        const { data: seeded } = await supabase.from('tasks').insert([
+          { title: 'vedati ellemek', status: 'todo', priority: 'high' },
+          { title: 'loving amelia', status: 'in_progress', priority: 'high' },
+        ]).select();
+        if (seeded) tasks = seeded;
       }
       setTasks(tasks);
       setMembers(membersRes.data || []);
