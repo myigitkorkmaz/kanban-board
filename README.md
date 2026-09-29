@@ -1,6 +1,18 @@
+<div align="center">
+
+<img src="public/logo.png" alt="Flow Board logo" width="72" />
+
 # Flow Board — Kanban Task Manager
 
-A polished, full-stack Kanban board built with React, TypeScript, and Supabase.
+A full-stack Kanban board built with React, TypeScript and Supabase. There's no sign-up: guests get their own isolated board.
+
+[![CI](https://github.com/myigitkorkmaz/kanban-board/actions/workflows/ci.yml/badge.svg)](https://github.com/myigitkorkmaz/kanban-board/actions/workflows/ci.yml)
+![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Auth%20%2B%20RLS-3ecf8e?logo=supabase&logoColor=white)
+
+</div>
 
 ## Features
 
@@ -33,7 +45,7 @@ A polished, full-stack Kanban board built with React, TypeScript, and Supabase.
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/myigitkorkmaz/kanban-board.git
 cd kanban-board
 npm install
 ```
